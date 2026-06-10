@@ -33,6 +33,8 @@ I thought that repeated searching can be reduced using HashMap.
 
 Instead of checking every pair again and again, I can store numbers and their indices in a map for faster lookup.
 
+and this helps to reduce time complexity form O(n²) to O(n) with the help of extra O(n) space complexity.
+
 
 
 ## 5. Where do you think optimization is possible?
