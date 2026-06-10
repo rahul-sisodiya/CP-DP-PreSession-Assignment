@@ -1,55 +1,44 @@
-# Two Sum – Explanation
+# Two Sum – Problem Solving Reflection
 
-## First Thought
+## 1. What was your first thought after reading the problem?
 
-My first idea was to check every pair in the array and see if their sum is equal to the target.
+My first thought was to check every possible pair in the array and see if their sum becomes equal to the target.
 
 
 
-## Brute Force Approach
+## 2. What brute-force solution came to your mind?
 
-I used two loops:
+I thought of using two loops:
 
-* first loop picks one element,
-* second loop checks the remaining elements.
+* the first loop selects one number,
+* and the second loop checks all remaining numbers.
 
 If the sum matches the target, I return the indices.
 
-### Time Complexity
+
+
+## 3. What is the time complexity of your solution?
 
 O(n²)
 
----
-
-## Optimization Idea
-
-I noticed that I was searching again and again in the array.
-
-To reduce this repeated work, I used a HashMap.
+Because nested loops are used.
 
 
-## Optimized Approach
 
-I stored numbers and their indices in a HashMap.
+## 4. Can you think of a better solution?
 
-For every element:
+YES
 
-* I calculated the required value,
-* checked whether it already existed in the map,
-* and returned the answer if found.
+I thought that repeated searching can be reduced using HashMap.
 
-### Time Complexity
+Instead of checking every pair again and again, I can store numbers and their indices in a map for faster lookup.
 
-O(n)
 
----
 
-## What I Learned
+## 5. Where do you think optimization is possible?
 
-This problem helped me understand:
+Optimization is possible in:
 
-* brute force vs optimized approach,
-* how HashMap improves searching,
-* and how optimization reduces time complexity.
-
----
+* repeated searching,
+* extra loops,
+* and duplicate comparisons.
